@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Nav from './Nav';
+import PicSquare from './PicSquare';
 
 class Dashboard extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class Dashboard extends Component {
         return (
             <div>
                 <Nav />
+                <PicSquare />
             </div>
         );
     }

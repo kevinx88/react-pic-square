@@ -10,7 +10,7 @@ class Nav extends Component {
             <nav className='navbar'>
                 <div className='navbar-header'>
                     <div className='navbar-title'>
-                        Hello World!
+                        PIC SQUARE
                     </div>
                 </div>
             </nav>
