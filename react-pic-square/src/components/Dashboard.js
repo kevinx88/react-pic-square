@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 
-import Nav from './Nav';
-import PicSquare from './PicSquare';
+import Nav from "./Nav";
+import PicSquare from "./PicSquare";
 
 class Dashboard extends Component {
     constructor(props) {
