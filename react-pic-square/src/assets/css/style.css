@@ -6,7 +6,7 @@ body {
     text-align:center;
     margin-top:20px;
     margin-bottom:30px;
-    height:45px;
+    height:39px;
     font-family:'Work Sans', sans-serif;
     font-size:17px;
     border-bottom:1px solid;
@@ -17,17 +17,41 @@ body {
 
 }
 
-.pic-square {
+.square-container {
     border:1px solid black;
     width:400px;
     height:400px;
-    margin:0 auto;
-    background-color:rgba(221,221,221,1);
+    position:absolute;
+    top:120px;
+    left:0;
+    right:0;
+    margin:auto;
+    background-color:rgba(245,245,245,1);
     font-family:'Quattrocento Sans', sans-serif;
-    color:#797979;
-    display:flex;
+    /*display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:center;*/
+}
+
+#square-instruction {
+    z-index:200;
+    font-family:arial;
+    color:#898989;
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+    top:305px;
+}
+
+#btnSave {
+    position:absolute;
+    left:50%;
+    margin-left:207px;
+    margin-top:390px;
+}
+
+.pic-square {
+
 }
 
 canvas {
