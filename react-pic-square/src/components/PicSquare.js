@@ -10,48 +10,23 @@ class PicSquare extends Component {
         super(props);
     }
 
-    handlSubmit(event) {
-        event.preventDefault();
-
-        $("#btnSave").click(function() {
-            html2canvas($("#picSquare"), {
-                onrendered: function(canvas) {
-                    document.body.appendChild(canvas);
-
-                    canvas.toBlob(function(blob) {
-                        console.log(blob);
-                        saveAs(blob, "Dashboard.png");
-                    });
-                }
-            });
-        });
-    }
-
-    handleChange(event) {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
-
     render() {
         return (
             <div className="container">
                 <div id="square-instruction">
                     Drag & drop your images here
                 </div>
-                <form onSubmit={this.handlSubmit.bind(this)}>
-                    <div className="square-container" id="picSquare">
-                        <div onChange={this.handleChange.bind(this)} className="pic-square">
-                        </div>
-                        <div onChange={this.handleChange.bind(this)} className="pic-square">
-                        </div>
-                        <div onChange={this.handleChange.bind(this)} className="pic-square">
-                        </div>
-                        <div onChange={this.handleChange.bind(this)} className="pic-square">
-                        </div>
-                    </div>
-                    <button type="submit" id="btnSave" value="Save PNG" >Submit</button>
-                </form>
+                <div className="square-container" id="pic-square">
+                    <form action="/" method="post" className="dropzone" id="my-dropzone">
+                    </form>
+                    <form action="/" method="post" className="dropzone" id="my-dropzone">
+                    </form>
+                    <form action="/" method="post" className="dropzone" id="my-dropzone">
+                    </form>
+                    <form action="/" method="post" className="dropzone" id="my-dropzone">
+                    </form>
+                </div>
+                <input type="button" id="btnSave" value="Save PNG" />
             </div>
         );
     }

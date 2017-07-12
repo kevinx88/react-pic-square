@@ -28,9 +28,16 @@ body {
     margin:auto;
     background-color:rgba(245,245,245,1);
     font-family:'Quattrocento Sans', sans-serif;
-    /*display:flex;
-    align-items:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    /*align-items:center;
     justify-content:center;*/
+}
+
+.dropzone {
+    border:1px solid black;
+    flex-grow:1;
 }
 
 #square-instruction {
