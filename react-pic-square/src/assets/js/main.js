@@ -2,7 +2,7 @@ $(document).ready(() => {
     console.log('script is loaded!');
 
     $(function() {
-      Dropzone.options = {
+      Dropzone.options.myDropzone = {
         maxFilesize: 5,
         acceptedFiles: ".png,.jpg,.gif,.bmp,.jpeg",
         init: function() {
@@ -29,9 +29,12 @@ $(document).ready(() => {
           });
 
           // On removing file
-          this.on("removedfile", function(file) {
-            console.log(file);
+          myDropzone.on("addedfile", function(file) {
+              file.previewElement.addEventListener("click", function() {
+                  myDropzone.removeFile(file);
+              });
           });
+
         }
       };
     });
