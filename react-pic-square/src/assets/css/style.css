@@ -19,8 +19,8 @@ body {
 
 .square-container {
     border:1px solid black;
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
     position:absolute;
     top:120px;
     left:0;
@@ -28,26 +28,88 @@ body {
     margin:auto;
     background-color:rgba(245,245,245,1);
     font-family:'Quattrocento Sans', sans-serif;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    /*align-items:center;
-    justify-content:center;*/
+    overflow:hidden;
 }
 
 .dropzone {
+
+}
+
+.dropzone {
+    border:1px solid;
+    border-style:dashed;
+    border-color:rgba(205,205,205,1);
+    float:left;
+    width:50%;
+    height:50%;
+    padding:0px;
+    margin:-1px;
+    overflow:auto;
+}
+
+.dz-progress {
+  position:absolute;
+  top:100px;
+  left:6px;
+  right:6px;
+  height:15px;
+  background:rgba(245,245,245,1);
+}
+.dz-upload {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color:rgba(42,157,59,0.8);
+}
+.dz-upload {
+  transition:width 1s ease-in-out;
+  border-radius:3px;
+}
+div.dz-default.dz-message {
+    width:0;
+    height:0;
+}
+
+.dz-message {
+    opacity:0;
+}
+
+.dz-error-mark {
+    width:0;
+    height:0;
+}
+
+.dz-success-mark {
+    width:0;
+    height:0;
+}
+
+.dz-preview {
+    /*background:#ccc;
     border:1px solid black;
-    flex-grow:1;
+    margin:0px;
+    padding:0px;*/
+    display:inline-block;
+    vertical-align:top;
+    margin:0px;
+}
+
+canvas {
+    position:relative;
+    top:500px;
 }
 
 #square-instruction {
     z-index:200;
-    font-family:arial;
+    font-family:'Zilla Slab', sans-serif;
     color:#898989;
     position:absolute;
     left:50%;
     margin-left:-100px;
-    top:305px;
+    top:95px;
 }
 
 #btnSave {
