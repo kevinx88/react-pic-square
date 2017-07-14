@@ -25,6 +25,9 @@ class PicSquare extends Component {
                     </form>
                 </div>
                 <input type="button" id="btnSave" value="Save PNG" />
+                <div id="canvas-store">
+                </div>
+                <button className="squareSave">Save Square</button>
             </div>
         );
     }

@@ -45,6 +45,7 @@ a.dz-remove {
     left:0px;
     text-decoration:none;
     font-family:sans-serif;
+    font-style:italic;
     font-weight:100;
 }
 
@@ -112,9 +113,20 @@ div.dz-default.dz-message {
 }
 
 canvas {
-    position:relative;
+    width:150px;
+}
+
+#canvas-store {
+    position:absolute;
     top:500px;
     width:200px;
+    height:200px;
+    border:1px solid black;
+}
+
+.squareSave {
+    position:absolute;
+    top:500px;
 }
 
 #btnSave {

@@ -10,7 +10,7 @@ $(document).ready(() => {
           this.options.dictRemoveFile = "Delete";
           //New file added
           this.on("addedfile", function(file) {
-            console.log("new file added ", file);
+            console.log("new file added", file);
           });
           // Send file starts
           this.on("sending", function(file) {
@@ -46,8 +46,12 @@ $(document).ready(() => {
                     document.body.appendChild(canvas);
 
                     canvas.toBlob(function(blob) {
-                        console.log(blob);
+                        // console.log(blob);
                         saveAs(blob, "Dashboard.png");
+                        
+                        var canvasStore = document.querySelector("#canvas-store");
+                        var canvasEl = document.querySelector("canvas");
+                        canvasStore.appendChild(canvasEl);
                     });
                 }
             });
