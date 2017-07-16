@@ -24,10 +24,10 @@ class PicSquare extends Component {
                     <form action="/" method="post" className="dropzone" id="my-dropzone">
                     </form>
                 </div>
-                <input type="button" id="btnSave" value="Save PNG" />
-                <div id="canvas-store">
-                </div>
-                <button className="squareSave">Save Square</button>
+                <button className="save-square-btn" id="saveSquareBtn">
+                    <input type="button" id="btnSave" value="Save PNG" />
+                    <img className="plus-icon" id="plusIcon" src={require('../assets/img/plus-round-icon.png')}/>
+                </button>
             </div>
         );
     }

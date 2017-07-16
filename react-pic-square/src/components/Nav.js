@@ -8,11 +8,11 @@ class Nav extends Component {
     render() {
         return (
             <nav className='navbar'>
-                <div className='navbar-header'>
-                    <div className='navbar-title'>
-                        PIC SQUARE
+                    <div className='navbar-header'>
+                        <div className='navbar-title'>
+                            PIC SQUARE
+                        </div>
                     </div>
-                </div>
             </nav>
         );
     }
