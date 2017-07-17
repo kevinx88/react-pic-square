@@ -13,6 +13,9 @@ class Nav extends Component {
                             PIC SQUARE
                         </div>
                     </div>
+                    <div>
+                        <button className="login-btn" type="submit">Login</button>
+                    </div>
             </nav>
         );
     }

@@ -49,13 +49,12 @@ $(document).ready(() => {
                         // console.log(blob);
                         saveAs(blob, "saved_square.png");
 
-                        var canvasStore = document.querySelector("#canvas-store");
-                        var canvasEl = document.querySelector("canvas");
-                        canvasStore.appendChild(canvasEl);
+                        // var canvasStore = document.querySelector("#canvas-store");
+                        // var canvasEl = document.querySelector("canvas");
+                        // canvasStore.appendChild(canvasEl);
 
                         var canvas = document.querySelector("canvas");
                         var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-
                         window.location.href = image;
 
                         // window.location = canvas.toDataURL("image/png");
