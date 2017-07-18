@@ -100,8 +100,9 @@ div.dz-default.dz-message {
 }
 
 canvas {
+    position:relative;
     width:150px;
-    padding:20px;
+    padding:26px;
 }
 
 #canvas-store {
