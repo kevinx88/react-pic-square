@@ -12,7 +12,7 @@ class PicSquare extends Component {
         return (
             <div className="container">
                 <div id="square-instruction">
-                    Drag & drop your images here
+                    Drop your images here
                 </div>
                 <div className="square-container" id="pic-square">
                     <form action="/" method="post" className="dropzone" id="my-dropzone">
