@@ -57,6 +57,10 @@ a.dz-remove {
     color:#000;
 }
 
+a.dz-remove:hover {
+    color:#ccc;
+}
+
 div.dz-default.dz-message {
     width:0;
     height:0;

@@ -5,12 +5,17 @@ import { Route, Router, browserHistory } from 'react-router';
 
 //Application assets
 import './assets/css/style.css';
+import './assets/css/user_auth.css';
 import './assets/js/main.js';
 
 import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 ReactDom.render(
     <Router history={browserHistory}>
         <Route path="/" component={Dashboard} />
+        <Route path='/login' component={Login} />
+        <Route path='/signup' component={Signup} />
     </Router>
 ,document.getElementById('app'));
