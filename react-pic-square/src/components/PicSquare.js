@@ -23,6 +23,7 @@ class PicSquare extends Component {
                     </form>
                     <form action="/" method="post" className="dropzone" id="my-dropzone">
                     </form>
+                    <img className="clear-icon" id="clearIcon" src={require('../assets/img/close-round-icon.png')}/>
                 </div>
                 <button className="save-square-btn" id="saveSquareBtn">
                     <input type="button" id="btnSave" value="Save PNG" />
