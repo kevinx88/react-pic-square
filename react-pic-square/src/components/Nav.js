@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Nav extends Component {
     constructor(props) {
@@ -14,7 +15,9 @@ class Nav extends Component {
                         </div>
                     </div>
                     <div>
-                        <button className="login-btn" type="submit">Login</button>
+                        <Link className="login-link" to={`/login`}>
+                            <button className="login-btn" type="submit">Login</button>
+                        </Link>
                     </div>
             </nav>
         );
