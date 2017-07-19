@@ -7,14 +7,25 @@ class Login extends Component {
         super(props);
 
         this.state = {
-            email: '',
-            password: '',
+            email: 'kevin@kevin.com',
+            password: 'kevin',
         }
     }
 
+
     handleSubmit(event) {
         event.preventDefault();
-        browserHistory.push('/');
+
+        axios.post(`http://localhost:8000/users/login`, {
+                email: this.state.email
+        })
+            .then(user => {
+                console.log(user.data);
+                window.localStorage.userId = user.data.id;
+                browserHistory.push('/');
+            })
+            .catch(err => console.log(err));
+
     }
 
     handleChange(event) {
@@ -37,10 +48,10 @@ class Login extends Component {
                             <h1 className="main-text">LOG IN</h1>
                             <form className="form-container" onSubmit={this.handleSubmit.bind(this)}>
                                 <div>
-                                    <input onChange={this.handleChange.bind(this)} name="email" value="james@james.com" type="email" />
+                                    <input onChange={this.handleChange.bind(this)} name="email" value={this.state.email} type="email" />
                                 </div>
                                 <div>
-                                    <input onChange={this.handleChange.bind(this)} name="password" value="james" type="password" />
+                                    <input onChange={this.handleChange.bind(this)} name="password" value={this.state.password} type="password" />
                                 </div>
                                 <div className="submit-login">
                                     <button type="submit">Login</button>

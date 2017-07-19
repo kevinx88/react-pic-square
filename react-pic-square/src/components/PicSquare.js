@@ -6,8 +6,18 @@ import request from "superagent";
 class PicSquare extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            art: []
+        }
     }
 
+    saveArt(){
+        axios.post('http://localhost:8000/image',{
+            image: this.state.iamge
+        })
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+    }
     render() {
         return (
             <div className="container">
