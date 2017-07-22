@@ -11,11 +11,13 @@ import './assets/js/main.js';
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Collection from './components/Collection';
 
 ReactDom.render(
     <Router history={browserHistory}>
         <Route path="/" component={Dashboard} />
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup} />
+        <Route path='/collection' component={Collection} />
     </Router>
 ,document.getElementById('app'));

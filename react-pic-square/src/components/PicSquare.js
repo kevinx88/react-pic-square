@@ -7,17 +7,19 @@ class PicSquare extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            art: []
+            image: '',
         }
     }
 
     saveArt(){
         axios.post('http://localhost:8000/image',{
-            image: this.state.iamge
+            image: this.state.image,
+            user: window.localStorage.userId
         })
         .then(res => console.log(res))
         .catch(err => console.log(err))
     }
+
     render() {
         return (
             <div className="container">

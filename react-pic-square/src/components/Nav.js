@@ -15,6 +15,9 @@ class Nav extends Component {
                         </div>
                     </div>
                     <div>
+                        <Link className="collection-link" to={`/collection`}>
+                            <button className="collection-btn" type="submit">Collection</button>
+                        </Link>
                         <Link className="login-link" to={`/login`}>
                             <button className="login-btn" type="submit">Login</button>
                         </Link>

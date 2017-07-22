@@ -8,7 +8,8 @@ class Dashboard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: ''
+            username: '',
+            squares: []
         }
     }
 
@@ -28,7 +29,9 @@ console.log(user);
         return (
             <div>
                 <Nav />
-                {this.state.username}
+                <div className="login-username">
+                    Hi, {this.state.username}
+                </div>
                 <PicSquare />
             </div>
         );
