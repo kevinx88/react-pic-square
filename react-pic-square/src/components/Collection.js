@@ -22,17 +22,16 @@ class Collection extends Component {
     render() {
         return (
             <div>
-            <div className="collection-container">
-                { this.state.squares.map((square, index) => {
-                    return (
-                        <div key={index} className="collection-square">
-                            <img src={square} className="img-responsive" />
-                            <h5>squares collection here</h5>
-                            <a onClick={this.destroySquare} href="#" className="collection-remove">x</a>
-                        </div>
-                    );
-                }) }
-            </div>
+                <div className="collection-container">
+                    { this.state.squares.map((square, index) => {
+                        return (
+                            <div key={index} className="collection-square">
+                                <img src={square} className="img-responsive" />
+                                <h5>squares collection here</h5>
+                            </div>
+                        );
+                    }) }
+                </div>
             </div>
         );
     }

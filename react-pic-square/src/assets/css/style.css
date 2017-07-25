@@ -4,16 +4,45 @@ body {
 
 .navbar-title {
     text-align:center;
-    margin-top:20px;
-    margin-bottom:30px;
-    height:39px;
+    margin-top:10px;
+    padding:5px;
+    height:32px;
     font-family:'Work Sans', sans-serif;
-    font-size:17px;
-    border-bottom:1px solid;
-    border-color:#898989;
+    font-size:20px;
+    border-bottom:1px solid black;
+}
+
+.nav-btn {
+    position:absolute;
+    height:22px;
+    font:11px "Work Sans", sans-serif;
+    padding:12px 10px;
+    border:1.5px solid black;
+    line-height:0.2;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    color:#666;
+    background-color:white;
+    transition:all 0.25s ease;
+
+    &:hover {
+        color:white;
+        background:black;
+        cursor:crosshair;
+    }
 }
 
 .login-btn {
+    right:20px;
+    top:15px;
+}
+
+.collection-btn {
+    right:83px;
+    top:15px;
+}
+
+/*.login-btn {
     position:absolute;
     font-size:12px;
     top:22px;
@@ -21,13 +50,13 @@ body {
     border-style:none;
     background:none;
     cursor:crosshair;
-}
+}*/
 
-.login-btn:hover {
+/*.login-btn:hover {
     color:#585858;
-}
+}*/
 
-.collection-btn {
+/*.collection-btn {
     position:absolute;
     font-size:12px;
     top:22px;
@@ -35,11 +64,11 @@ body {
     border-style:none;
     background:none;
     cursor:crosshair;
-}
+}*/
 
-.collection-btn:hover {
+/*.collection-btn:hover {
     color:#585858;
-}
+}*/
 
 .login-username {
     position:absolute;

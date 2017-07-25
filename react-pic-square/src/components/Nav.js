@@ -16,10 +16,10 @@ class Nav extends Component {
                     </div>
                     <div>
                         <Link className="collection-link" to={`/collection`}>
-                            <button className="collection-btn" type="submit">Collection</button>
+                            <button className="nav-btn collection-btn" type="submit">Collection</button>
                         </Link>
                         <Link className="login-link" to={`/login`}>
-                            <button className="login-btn" type="submit">Login</button>
+                            <button className="nav-btn login-btn" type="submit">Login</button>
                         </Link>
                     </div>
             </nav>
