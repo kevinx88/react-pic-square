@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import axios from 'axios';
 
 class Collection extends Component {
     constructor(props) {
@@ -10,14 +11,22 @@ class Collection extends Component {
         }
     }
 
-    destroySquare(index) {
-        event.preventDefault();
 
-        this.state.squares.splice(index, 1);
-        this.setState({
-            squares: this.state.squares
-        });
-    }
+
+    // componentDidMount() {
+    //     axios
+    //     .get("http://myapi-profstream.herokuapp.com/api/202dbe/wines")
+    //     .then((response) => {
+    //         this.setState({
+    //             squares: response.data
+    //         });
+    //     })
+    //     .catch((err) => {
+    //         console.log(err);
+    //     });
+    // }
+
+
 
     render() {
         return (
@@ -27,7 +36,7 @@ class Collection extends Component {
                         return (
                             <div key={index} className="collection-square">
                                 <img src={square} className="img-responsive" />
-                                <h5>squares collection here</h5>
+                                <h4>collection here</h4>
                             </div>
                         );
                     }) }

@@ -48,9 +48,21 @@ $(document).ready(() => {
                     canvas.toBlob(function(blob) {
                         saveAs(blob, "saved_square.png");
 
-                        var canvas = document.querySelector("canvas");
-                        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-                        window.location.href = image;
+                        // var canvas = document.querySelector("canvas");
+                        // var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                        // window.location.href = image;
+
+                        let img = canvas.toDataURL("image");
+                        let item_image = img.replace(/^data:image\/(png|jpg);base64,/, "");
+
+                        let src = "data:image/png;base64,";
+                        src += item_image;
+                        var newImage = document.createElement('img');
+                        newImage.src = src;
+                        newImage.width = newImage.height = "80";
+
+                        //where to insert the image
+                        document.querySelector('canvas').innerHTML = newImage.outerHTML;
                     });
                 }
             });

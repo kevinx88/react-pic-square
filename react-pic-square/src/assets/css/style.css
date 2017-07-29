@@ -15,10 +15,11 @@ body {
 .nav-btn {
     position:absolute;
     height:22px;
-    font:11px "Work Sans", sans-serif;
-    padding:12px 10px;
+    font:10px "Work Sans", sans-serif;
+    font-weight:bold;
+    padding:10px 7px;
     border:1.5px solid black;
-    line-height:0.2;
+    line-height:0;
     text-transform:uppercase;
     letter-spacing:0.5px;
     color:#666;
@@ -34,12 +35,12 @@ body {
 
 .login-btn {
     right:20px;
-    top:15px;
+    top:17px;
 }
 
 .collection-btn {
     right:83px;
-    top:15px;
+    top:17px;
 }
 
 /*.login-btn {

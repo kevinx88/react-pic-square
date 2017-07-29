@@ -23,6 +23,8 @@ class PicSquare extends Component {
     render() {
         return (
             <div className="container">
+                <div id="base64-img-container">
+                </div>
                 <div id="square-instruction">
                     Drop your images here
                 </div>
