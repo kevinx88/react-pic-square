@@ -46,7 +46,7 @@ $(document).ready(() => {
                     document.body.appendChild(canvas);
 
                     canvas.toBlob(function(blob) {
-                        saveAs(blob, "saved_square.png");
+                        saveAs(blob, "saved_square.png");np
 
                         // var canvas = document.querySelector("canvas");
                         // var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");

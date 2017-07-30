@@ -30,7 +30,7 @@ console.log(user);
             <div>
                 <Nav />
                 <div className="login-username">
-                    {this.state.username}
+                    Hi, {this.state.username}
                 </div>
                 <PicSquare />
             </div>

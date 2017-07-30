@@ -1,5 +1,5 @@
 body {
-    background-color:#fff;
+    background-color:rgba(29,31,33,1);
 }
 
 .navbar-title {
@@ -9,6 +9,7 @@ body {
     height:32px;
     font-family:'Work Sans', sans-serif;
     font-size:20px;
+    color:#fff;
     border-bottom:1px solid black;
 }
 
@@ -22,7 +23,7 @@ body {
     line-height:0;
     text-transform:uppercase;
     letter-spacing:0.5px;
-    color:#666;
+    color:black;
     background-color:white;
     transition:all 0.25s ease;
 
@@ -33,14 +34,20 @@ body {
     }
 }
 
+.login-username {
+    color:#fff;
+}
+
 .login-btn {
     right:20px;
     top:17px;
+    background-color:rgba(255,255,255,1);
 }
 
 .collection-btn {
     right:83px;
     top:17px;
+    background-color:rgba(255,255,255,1);
 }
 
 /*.login-btn {
@@ -80,7 +87,7 @@ body {
 }
 
 .square-container {
-    border:1px solid;
+    /*border:1px solid;*/
     border-color:rgba(195,195,195,1);
     width:300px;
     height:300px;
